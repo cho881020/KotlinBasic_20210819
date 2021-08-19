@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +15,19 @@ class MainActivity : AppCompatActivity() {
 
         logBtn02.setOnClickListener {
             Log.d("메인화면", "두번째 로그 버튼 눌림")
+        }
+
+        toastBtn2.setOnClickListener {
+            Toast.makeText(this, "두번째 토스트", Toast.LENGTH_SHORT).show()
+
+        }
+
+        toastBtn.setOnClickListener {
+
+//            사용자에게 알림 (토스트) 띄우기.
+
+            Toast.makeText(this, "연습용 토스트 띄우기", Toast.LENGTH_SHORT).show()
+
         }
 
         logBtn01.setOnClickListener {
